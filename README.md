@@ -8,7 +8,18 @@ This is a **React To-Do List** application that allows users to:
 - Persist tasks using `localStorage`.
 
 The project validates task input, dynamically displays tasks, and ensures a user-friendly interface.
+---
+## Live Demo
+The Application is at [Live_Demo](https://ch-lokesh-21.github.io/celebal_week_2/)
+---
 
+![image1](https://github.com/Ch-Lokesh-21/celebal_week_2/blob/2b7f24868d8d3b581d7197556a212e4e6e5a3427/image.png)
+---
+![image2](https://github.com/Ch-Lokesh-21/celebal_week_2/blob/2b7f24868d8d3b581d7197556a212e4e6e5a3427/image2.png)
+---
+![image3](https://github.com/Ch-Lokesh-21/celebal_week_2/blob/2b7f24868d8d3b581d7197556a212e4e6e5a3427/image3.png)
+
+---
 ## Features
 
 1. **Add Tasks**: Users can add tasks with a validated text input field.
@@ -22,8 +33,8 @@ The project validates task input, dynamically displays tasks, and ensures a user
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/react-todo-list.git
-    cd react-todo-list
+    git clone https://github.com/Ch-Lokesh-21/celebal_week_2.git
+    cd celebal_week_2
     ```
 
 2. Install dependencies:
