@@ -93,3 +93,17 @@ h1 {
 .delete-icon {
   cursor: pointer;
 }
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.controls select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
