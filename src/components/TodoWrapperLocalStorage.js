@@ -7,8 +7,8 @@ uuidv4();
 
 export const TodoWrapperLocalStorage = () => {
     const [todos, setTodos] = useState([]);
-    const [sortOption, setSortOption] = useState('default'); // default, alphabetical, completed
-    const [filterOption, setFilterOption] = useState('all'); // all, completed, incomplete
+    const [sortOption, setSortOption] = useState('default'); 
+    const [filterOption, setFilterOption] = useState('all'); 
 
     useEffect(() => {
         const savedTodos = JSON.parse(localStorage.getItem('todos')) || [];
