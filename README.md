@@ -1,79 +1,58 @@
-# To-Do List Application
+# React To-Do List Application
 
-A simple, user-friendly to-do list application built with React. This app allows users to manage their daily tasks effectively by adding, editing, and deleting tasks. It also provides a clean and responsive user interface for an enhanced user experience.
+This is a **React To-Do List** application that allows users to:
+- Add new tasks.
+- Mark tasks as complete/incomplete.
+- Remove tasks.
+- Optionally sort and filter tasks.
+- Persist tasks using `localStorage`.
 
----
+The project validates task input, dynamically displays tasks, and ensures a user-friendly interface.
 
 ## Features
 
-- **Add Tasks**: Quickly add tasks with ease.
-- **Edit Tasks**: Modify existing tasks to keep them up-to-date.
-- **Delete Tasks**: Remove completed or unwanted tasks.
-- **Responsive Design**: Optimized for both desktop and mobile views.
-- **User-Friendly Interface**: Minimalistic and intuitive design.
+1. **Add Tasks**: Users can add tasks with a validated text input field.
+2. **Mark Completion**: Mark tasks as complete/incomplete with a single click.
+3. **Remove Tasks**: Delete unwanted tasks from the list.
+4. **Sorting**: Sort tasks alphabetically or by completion status.
+5. **Filtering**: Filter tasks to show all, completed, or incomplete tasks.
+6. **LocalStorage Integration**: Tasks are saved in `localStorage` to persist data across sessions.
 
----
-
-## Technologies Used
-
-- **React**: Frontend framework for building the user interface.
-- **CSS**: For styling and responsive design.
-- **JavaScript (ES6)**: For app logic and functionality.
-
----
-
-## Installation
-
-Follow these steps to set up the application locally:
-
-### Prerequisites
-
-- Node.js (latest stable version)
-- npm or yarn package manager
-
-### Steps
+## Installation and Setup
 
 1. Clone the repository:
-   ```bash
-   git clone <repository_url>
-   ```
+    ```bash
+    git clone https://github.com/your-username/react-todo-list.git
+    cd react-todo-list
+    ```
 
-2. Navigate to the project directory:
-   ```bash
-   cd celebal_week_2
-   ```
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-3. Install dependencies:
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
+3. Start the application:
+    ```bash
+    npm start
+    ```
 
-4. Start the development server:
-   ```bash
-   npm start
-   # or
-   yarn start
-   ```
+The application will be available at `http://localhost:3000`.
 
-5. Open your browser and navigate to:
-   ```
-   http://localhost:3000
-   ```
----
+## Code Overview
 
-## Usage
+### Main Components
 
-1. **Add a Task**:
-   - Use the input field at the top of the app to add a new task.
-   - Press `Enter` or click the `Add` button to save the task.
+1. **`TodoWrapper`**: The main component managing state, task addition, sorting, filtering, and localStorage integration.
+2. **`TodoForm`**: Handles task input and submission.
+3. **`Todo`**: Displays individual tasks with options to mark as complete or delete.
+4. **`EditTodoForm`**: Enables editing of an existing task.
 
-2. **Edit a Task**:
-   - Click the `Edit` button next to a task to modify its details.
-   - Press `Save` to update the task.
+### State Management
+- **`useState`** is used to manage the list of tasks and application controls.
+- **`useEffect`** ensures tasks are loaded and updated in `localStorage`.
 
-3. **Delete a Task**:
-   - Click the `Delete` button next to a task to remove it.
-
----
+## Testing Guidance
+To manually test:
+- Open the app in a browser.
+- Test each feature (add, delete, complete, sort, filter).
+- Refresh to confirm data persistence via `localStorage`.
